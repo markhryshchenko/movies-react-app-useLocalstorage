@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import "./Reset.css";
+import "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Main from "./components/Main";
+import LoginForm from "./components/LoginForm";
+import RegistrForm from "./components/RegistrForm";
+import ItemDetails from "./components/ItemDetails";
+import AddNewFilm from "./components/AddNewFilm";
+import { initMoviesFromLocalStorage } from "./components/moviesService";
+import EditItem from "./components/EditItem";
+import { films } from "./dataFilms";
 
 function App() {
+  useEffect(() => {
+   
+    initMoviesFromLocalStorage()
+   /*  const filmsFromLocalStorage = JSON.parse(localStorage.getItem("movies"));
+    if (filmsFromLocalStorage == null) {
+      localStorage.setItem("movies", JSON.stringify(films));
+    } */
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Main />} />;
+        <Route path="/registr" element={<RegistrForm />} />;
+        <Route path="/login" element={<LoginForm />} />
+        <Route path="/itemDetails/:id" element={<ItemDetails />} />
+        <Route path="/itemDetails/:id/edit" element={<EditItem />} />
+        <Route path="/addnew" element={<AddNewFilm />} />
+        <Route path="*" element={<h1>Page not found</h1>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
