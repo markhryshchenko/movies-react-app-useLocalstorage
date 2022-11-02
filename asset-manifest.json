@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/markhryshchenko/movies-react-app-useLocalstorage/static/css/main.ef0718c2.css",
-    "main.js": "/markhryshchenko/movies-react-app-useLocalstorage/static/js/main.1ff56547.js",
-    "static/js/787.28cb0dcd.chunk.js": "/markhryshchenko/movies-react-app-useLocalstorage/static/js/787.28cb0dcd.chunk.js",
-    "index.html": "/markhryshchenko/movies-react-app-useLocalstorage/index.html",
-    "main.ef0718c2.css.map": "/markhryshchenko/movies-react-app-useLocalstorage/static/css/main.ef0718c2.css.map",
-    "main.1ff56547.js.map": "/markhryshchenko/movies-react-app-useLocalstorage/static/js/main.1ff56547.js.map",
-    "787.28cb0dcd.chunk.js.map": "/markhryshchenko/movies-react-app-useLocalstorage/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/movies-react-app-useLocalstorage/static/css/main.ef0718c2.css",
+    "main.js": "/movies-react-app-useLocalstorage/static/js/main.565b4dea.js",
+    "static/js/787.28cb0dcd.chunk.js": "/movies-react-app-useLocalstorage/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/movies-react-app-useLocalstorage/index.html",
+    "main.ef0718c2.css.map": "/movies-react-app-useLocalstorage/static/css/main.ef0718c2.css.map",
+    "main.565b4dea.js.map": "/movies-react-app-useLocalstorage/static/js/main.565b4dea.js.map",
+    "787.28cb0dcd.chunk.js.map": "/movies-react-app-useLocalstorage/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ef0718c2.css",
-    "static/js/main.1ff56547.js"
+    "static/js/main.565b4dea.js"
   ]
 }
