@@ -9,13 +9,11 @@ import ItemDetails from "./components/ItemDetails";
 import AddNewFilm from "./components/AddNewFilm";
 import { initMoviesFromLocalStorage } from "./components/moviesService";
 import EditItem from "./components/EditItem";
-import { films } from "./dataFilms";
 
 function App() {
   useEffect(() => {
-   
-    initMoviesFromLocalStorage()
-   /*  const filmsFromLocalStorage = JSON.parse(localStorage.getItem("movies"));
+    initMoviesFromLocalStorage();
+    /*  const filmsFromLocalStorage = JSON.parse(localStorage.getItem("movies"));
     if (filmsFromLocalStorage == null) {
       localStorage.setItem("movies", JSON.stringify(films));
     } */
