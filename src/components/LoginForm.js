@@ -116,7 +116,7 @@ export default function LoginForm() {
         &#9888; The validation in this form makes without library
       </div>
 
-      <Link className="link-to-login" to="/registr">
+      <Link className="link-to-login" to="https://markhryshchenko.github.io/movies-react-app-useLocalstorage/registr">
         I don't have an account
       </Link>
       <Footer />

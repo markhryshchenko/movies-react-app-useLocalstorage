@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import {
   Groups2TwoTone,
@@ -11,7 +11,7 @@ import { red } from "@mui/material/colors";
 const color = red[900];
 
 export default function Item({ item, deleteItem }) {
-  const { id } = useParams();
+  //const { id } = useParams();
   return (
     <div className="item item__grid">
       <img className="item-img" src={item.img} alt="img" />
